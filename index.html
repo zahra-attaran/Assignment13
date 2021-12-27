@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+<body >
+<div class="bg table d-flex justify-content-center align-items-center text-center">
+    <div class="w-auto">
+        <h3 class="warning bg-success rounded-3 " id="warning"></h3>
+        <table class="tbl">
+            <tr>
+                <td>
+                    <button onclick="show_index(0,0)" class="cell"></button>
+                </td>
+                <td>
+                    <button onclick="show_index(0,1)" class="cell"></button>
+                </td>
+                <td>
+                    <button onclick="show_index(0,2)" class="cell"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="show_index(1,0)" class="cell"></button>
+                </td>
+                <td>
+                    <button onclick="show_index(1,1)" class="cell"></button>
+                </td>
+                <td>
+                    <button onclick="show_index(1,2)" class="cell"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="show_index(2,0)" class="cell"></button>
+                </td>
+                <td>
+                    <button onclick="show_index(2,1)" class="cell"></button>
+                </td>
+                <td>
+                    <button onclick="show_index(2,2)" class="cell"></button>
+                </td>
+            </tr>
+        </table>
+
+        <form>
+            <p class="text-white ">How do you like to play?</p>
+            <input type="radio" id="Players" name="play" value="Players" checked>
+            <label for="Players" class="text-white Players fw-bold" id="lblPlayers"><i class="bi bi-people-fill"></i> 2 Players</label>
+            <input type="radio" id="CPUPlayers" name="play" value="CPUPlayers">
+            <label for="CPUPlayers" class="text-white fw-bold" id="lblCPUPlayers"><i class="bi bi-person-fill"></i> Automatic play</label><br>
+        </form>
+        <button onclick="NEWGAME()" class="NewGame btn btn-warning" id="NewGame">
+            New Game
+        </button>
+        <div class="Scores row">
+            <p class="text-info col-sm-6 col-xs-6">X scores: <b id="score-x" class="text-success">0</b></p>
+            <p class="text-info col-sm-6 col-xs-6">O scores: <b id="score-o" class="text-success">0</b></p>
+            <p class="text-info col-12">Draw: <b id="score-Draw" class="text-success">0</b></p>
+        </div>
+        <p id="barande"></p>
+    </div>
+
+</div>
+
+
+<script src="js/scripts.js">
+
+</script>
+</body>
+</html>
